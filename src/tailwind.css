@@ -1,0 +1,19 @@
+/* Orden de las capas de Tailwind */
+@layer theme, base, components, utilities;
+
+/* Partes de Tailwind: variables del tema, reinicio de estilos y clases utilitarias */
+@import "tailwindcss/theme.css" layer(theme) prefix(tw);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities) prefix(tw);
+
+/* Colores del sitio: Tailwind genera clases como tw:bg-rosa, tw:text-texto, tw:border-amarillo */
+@theme {
+  --color-rosa: #e8478b;
+  --color-rosa-oscuro: #b8286a;
+  --color-rosa-claro: #fde4ef;
+  --color-amarillo: #f5e1a4;
+  --color-amarillo-oscuro: #ecd68a;
+  --color-amarillo-claro: #fffbea;
+  --color-texto: #4a2038;
+  --color-gris: #7a5a6b;
+}
